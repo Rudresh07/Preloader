@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+.center{
+    width: 15rem;
+    height: 15rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border-right: 0.3rem solid rgb(73, 8, 250);
+    animation: rot 3s linear infinite;
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.center1{
+    width: 10rem;
+    height: 10rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border-right: 0.3rem solid rgb(250, 117, 8);
+    animation: rudresh 1.5s linear infinite;
+}
+@keyframes rudresh{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
